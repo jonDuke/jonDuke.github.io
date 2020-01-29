@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle:
 ---
 
 My name is Jonathan Duke.  I'm currently studying data science full time, and this site will be a portfolio of my projects as I learn.
