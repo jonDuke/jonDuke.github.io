@@ -4,13 +4,10 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Jonathan Duke.  I'm currently studying data science full time, and this site will be a portfolio of my projects as I learn.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+If you're here now, you may notice it's pretty empty.  Congrats on finding me before I was ready!  The site is new, so come back later for the good stuff.
 
-What else do you need?
+As for me, I grew up in Denver but now live in the Seattle area.
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+When I'm not studying, my main hobbies right now are video games and hiking.  I'll make a post about them sometime as well.
