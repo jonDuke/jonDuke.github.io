@@ -12,7 +12,7 @@ I don't know about you, but most of my recreational time ends up going to video 
 
 ## The Reviews Data
 
-Source: https://www.kaggle.com/luthfim/steam-reviews-dataset
+Source: [https://www.kaggle.com/luthfim/steam-reviews-dataset](https://www.kaggle.com/luthfim/steam-reviews-dataset)
 
 This data has a whopping 434,891 reviews in it!  Steam reviews either recommend a game or not, so there's no 5 or 10 star ratings here.  They do have the review text in this data, as well as counts of how many hours the reviewer has played and how many other users said they found the review funny or helpful.
 
@@ -58,7 +58,7 @@ Looks like there is not a relation there.  Specifically, we only had correlation
 
 ## The Users Data
 
-Source: https://www.kaggle.com/tamber/steam-video-games
+Source: [https://www.kaggle.com/tamber/steam-video-games](https://www.kaggle.com/tamber/steam-video-games)
 
 This data is a little simpler.  Each row includes an anonymized user id, the game owned, and how many hours they have played in that game.  This data is particularly interesting because Steam changed their policies a couple years ago and closed public access to individual user data like this.
 
