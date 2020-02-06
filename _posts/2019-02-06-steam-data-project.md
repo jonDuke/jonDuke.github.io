@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Analyzing Steam Reviews and Users Data
-bigimg: /img/SteamProjectImg/steamgamebanner2.jpg
+featured-img: /img/SteamProjectImg/steamgamebanner2.jpg
 tags: [Data Analysis, Video Games]
 comments: true
 ---

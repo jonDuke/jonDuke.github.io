@@ -4,6 +4,9 @@ layout: base
 
 {% include header.html type="post" %}
 
+<div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+    <!-- Include your post title, byline, date, and other info inside the header here. -->
+</div>
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
