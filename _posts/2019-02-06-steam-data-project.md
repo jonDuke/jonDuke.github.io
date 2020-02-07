@@ -118,4 +118,6 @@ This actually shows the opposite of what we had before.  When just looking at re
 
 So I was not able to find some of the cool cross-dataset insights I was hoping for.  This still showed some interesting things, and even challenged my assumption that people who didn't recommend a game weren't likely to play it much.  Steam no longer makes user data as accessible as it used to, but I would definitely like to revisit these observations if I can get more complete and up to date data.
 
+You can read this story on Medium as well! https://medium.com/@jonduke90/analyzing-steam-reviews-and-users-data-7a4ff3c5ce1a
+
 And last but not least, here is my jupyter notebook where you can see my raw work: [https://github.com/jonDuke/jonDuke.github.io/blob/master/notebooks/Steam_Data_Analysis.ipynb](https://github.com/jonDuke/jonDuke.github.io/blob/master/notebooks/Steam_Data_Analysis.ipynb)
