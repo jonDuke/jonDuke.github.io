@@ -1,4 +1,11 @@
-﻿# Attempting to predict League of Legends match outcomes
+﻿---
+layout: post
+title: Attempting to predict League of Legends match outcomes
+tags: [Predictive Modeling, Video Games]
+comments: true
+---
+
+# Attempting to predict League of Legends match outcomes
 
 Now that I’m learning how to do predictive modeling, I start to look at many things and ask “can this be predicted or not”? So when I found a dataset of about 50 thousand League of Legends matches, I decided to give it a try.  I'll save you the long read and say it here: I was not successful.  I was still able to get a few insights though, so read on to see how it was all done and what I did learn.
 
