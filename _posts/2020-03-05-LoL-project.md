@@ -14,7 +14,7 @@ First, let me explain a bit about the game for those who are not familiar.  [Lea
 
 Each of the 10 players pick one of many unique champions, all with their own abilities and stats.  The main goal is to fight your way into the other team's base and destroy their nexus (the big building in the back of each side).
 
-![hrs played vs recommendations graph](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/LoLmap.jpg?raw=true){: .center-block :}
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/LoLmap.jpg?raw=true" alt="hrs played vs recommendations graph" align="middle">
 
 There are many different strategies that teams can use to win, but since there are so many champions to choose from I wanted to focus on that with my predictions.
 
