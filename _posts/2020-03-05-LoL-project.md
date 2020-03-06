@@ -14,7 +14,7 @@ First, let me explain a bit about the game for those who are not familiar.  [Lea
 
 Each of the 10 players picks one of over a hundred unique champions, all with their own abilities and stats.  The main goal is to fight your way into the other team's base and destroy their nexus (the big building in the back of each side).
 
-<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/LoLmap.jpg?raw=true" alt="game map" class="center-block">{: .center-block :}
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/LoLmap.jpg?raw=true" alt="game map" class="center-block">
 
 There are many different strategies that teams can use to win, but since there are so many champions to choose from I wanted to focus on that with my predictions.
 
@@ -60,10 +60,10 @@ Now that I had those statistics, I could apply them to my pre-game data and gene
 
 Once I had done that, I had some numerical data I could explore.  I split my training data by which team won, and made more visualizations.  This was where I got my first clue that this would be difficult to predict.
 
-<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/TopPicksGraph.png?raw=true" alt="top_picks and top_bans graph"  width=720>{: .center-block :}
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/TopPicksGraph.png?raw=true" alt="top_picks and top_bans graph">{: .center-block :}
 
 <br/>
-<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/DistributionsGraph.png?raw=true" alt="distributions graph" width=1150>{: .center-block :}
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/DistributionsGraph.png?raw=true" alt="distributions graph" width=1150>
 
 Even after going so far to calculate individual champion statistics and apply them to the teams in each of the matches, every feature I had was distributed the same regardless of which team won.  This meant that none of them would end up being very strong predictors.  But I came this far already, so it was time to actually try predicting things.
 
@@ -111,7 +111,7 @@ Now that I had some models, I could get a few more visualizations as well.  I st
 
 To look at individual features, I pulled the feature coefficients for the logistic regression model, and calculated permutation importances for the random forest model.  The both show that most features have low importance values, though for what it's worth the baron_delta feature was my strongest predictor.
 
-<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/FeatureImportanceGraph.png?raw=true" alt="coefficient and importances graphic" width=790>{: .center-block :}
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/FeatureImportanceGraph.png?raw=true" alt="coefficient and importances graphic">{: .center-block :}
 
 ## Conclusions
 As you can see, even with all the extra statistical analysis I threw in I still could not confidently predict the outcome.  No matter which champions each team picked, they still had even odds of winning.
