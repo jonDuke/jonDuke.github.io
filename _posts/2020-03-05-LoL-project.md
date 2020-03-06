@@ -1,6 +1,7 @@
 ﻿---
 layout: post
 title: Attempting to predict League of Legends match outcomes
+bigimg: /img/LoLProject/ChampBanner.png
 tags: [Predictive Modeling, Video Games]
 comments: true
 ---
@@ -14,7 +15,7 @@ First, let me explain a bit about the game for those who are not familiar.  [Lea
 
 Each of the 10 players picks one of over a hundred unique champions, all with their own abilities and stats.  The main goal is to fight your way into the other team's base and destroy their nexus (the big building in the back of each side).
 
-<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/LoLmap.jpg?raw=true" alt="game map" class="center-block">
+<img src="/img/LoLProject/LoLmap.jpg?raw=true" alt="game map" class="center-block">
 
 There are many different strategies that teams can use to win, but since there are so many champions to choose from I wanted to focus on that with my predictions.
 
