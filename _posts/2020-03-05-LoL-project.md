@@ -14,7 +14,7 @@ First, let me explain a bit about the game for those who are not familiar.  [Lea
 
 Each of the 10 players pick one of many unique champions, all with their own abilities and stats.  The main goal is to fight your way into the other team's base and destroy their nexus (the big building in the back of each side).
 
-<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/LoLmap.jpg?raw=true" alt="hrs played vs recommendations graph" align="middle">
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/LoLmap.jpg?raw=true" alt="game map" align="middle">
 
 There are many different strategies that teams can use to win, but since there are so many champions to choose from I wanted to focus on that with my predictions.
 
@@ -24,7 +24,7 @@ The original dataset can be found on Kaggle: [https://www.kaggle.com/datasnaek/l
 While it would be possible to get this same data from the official API, having a dump of 50 thousand matches is really convenient.  It does give me an important limitation though: this data is a couple years old.  The game is constantly tweaked and rebalanced to keep things fair, so any predictions may not exactly work on today's game.   The biggest difference is the number of champions.  This data includes 138 different champions, but today there are 148 of them.
 
 Let's look at the data itself:
-https://gist.github.com/jonDuke/48af3750e7ca2dea5017a1693314b30d
+<script src="https://gist.github.com/jonDuke/48af3750e7ca2dea5017a1693314b30d.js"></script>
 
 I have already performed a train/validate/test split here, so the training set seen is about 36k of the total 51k rows.
 
@@ -35,28 +35,36 @@ For fun I did try some other columns and found that even simple default models c
 ### Finding statistics
 While I could potentially run a model by putting in only the champions each player picked, I wanted to get some better statistics that I could also use as features.  Statistics like pick rates and win rates are commonly tracked by others who analyze League data, but I calculated my own in this case using the matches in my train and validation datasets.
 
-https://gist.github.com/jonDuke/39b7a7a11d9ca53dd2f072a8e01e9eba
+<script src="https://gist.github.com/jonDuke/39b7a7a11d9ca53dd2f072a8e01e9eba.js"></script>
 
 The last column is the only exception, while there are places I could pull the info automatically, I just manually looked that up for this project.  It represents the most common roles each champion is used in.
 
 The pick, ban, and win count and rate columns simply show how often each champion was picked by a player, banned by a player, or won a match they were in.  And the baron and dragon columns give the average number of baron and dragon kills that teams got when this champion was on that team.
 
 Since there are only 9 spells in the game, I did not spend much time on them.  I did chart how often they were all used though.  Remember that each of the 10 players gets to pick 2 spells.
-![spell use graph](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/SpellUseGraph.png?raw=true){: .center-block :}
+
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/SpellUseGraph.png?raw=true" alt="spell use graph" align="middle">
 
 And of course who doesn't love some top 10 lists.  Here's the top champions for pick, ban, and win rates.
-![pick, ban, win rate graph](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/Top10sGraph.png?raw=true){: .center-block :}
+
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/Top10sGraph.png?raw=true" alt="pick, ban, win rate graph" align="middle">
 
 Interestingly, those rates aren't strongly correlated with each other.  By graphing them this way, we can see that the pick and ban rates are only loosely related and have a lot of variance, while win rates are fairly consistent across the whole roster.  It was also interesting to find the outlier that the least picked champion also had the highest win rate (in these matches, at least).
-![rate comparison graph](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/RateComparisonGraph.png?raw=true){: .center-block :}
+
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/RateComparisonGraph.png?raw=true" alt="rate comparison graph" align="middle">
 
 ### Feature engineering
-Now that I had those statistics, I could apply them to my pre-game data and generate some new information about each match.  For each of the different statistics I had, I calculated the average of the 5 champions on each team to get an overall statistic for that team.  I also calculated the difference between the teams' statistics so I could directly compare them.  Lastly, using the roles that I looked up I added a feature to tell if each team had one of each of the 5 roles (the 'meta' columns).  Note that this is only an approximation since many champions are viable in more than one role and I only recorded their most popular one.
-https://gist.github.com/jonDuke/45c7022df1d7aad862e02c6b2f884214
+Now that I had those statistics, I could apply them to my pre-game data and generate some more information about each match.  For each of the different statistics I had, I calculated the average of the 5 champions on each team to get an overall statistic for that team.  I also calculated the difference between the teams' statistics so I could directly compare them.  Lastly, using the roles that I looked up I added a feature to tell if each team had one of each of the 5 roles (the 'meta' columns).  Note that this is only an approximation since many champions are viable in more than one role and I only recorded their most popular one.
+
+<script src="https://gist.github.com/jonDuke/45c7022df1d7aad862e02c6b2f884214.js"></script>
 
 Once I had done that, I had some numerical data I could explore.  I split my training data by which team won, and made more visualizations.  This was where I got my first clue that this would be difficult to predict.
-![top_picks and top_bans graph](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/TopPicksGraph.png?raw=true){: .center-block :}
-![distributions graph](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/DistributionsGraph.png?raw=true){: .center-block :}
+
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/TopPicksGraph.png?raw=true" alt="top_picks and top_bans graph" align="middle">
+
+<br/>
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/DistributionsGraph.png?raw=true" alt="distributions graph" align="middle">
+
 Even after going so far to calculate individual champion statistics and apply them to the teams in each of the matches, every feature I had was distributed the same regardless of which team won.  This meant that none of them would end up being very strong predictors.  But I came this far already, so it was time to actually try predicting things.
 
 ## Models and Predictions
@@ -75,7 +83,7 @@ The models and encoders are all from Scikit Learn, more info can be found here
 - [https://contrib.scikit-learn.org/categorical-encoding/](https://contrib.scikit-learn.org/categorical-encoding/)
 
 And while I could print out tables of all the results, it's easier to show it all in this handy graph:
-[plotly graph]
+<iframe width="900" height="500" frameborder="0" scrolling="no" src="//plot.ly/~jDuke9/1.embed"></iframe>
 
 It was interesting to see Logistic Regression perform so well here.  With the abundance of categorical data, I expected tree-based models to perform better.  Categorical Naive-Bayes was also an interesting find.  Since it could not take negative numbers as input (I could not find that in documentation, but the errors were very specific), the only data I passed to that one was the champions picked.
 
@@ -98,10 +106,12 @@ I followed this up by selecting a few of the top models and used sklearn's GridS
 	- Cross-validation accuracy: 53.22%
 
 Now that I had some models, I could get a few more visualizations as well.  I started with simple confusion matrices.  They do at least show that we're not simply picking one team all the time, and that the models are attempting to guess.
-![confusion matrices](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/ConfusionMatrices.png?raw=true){: .center-block :}
+
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/ConfusionMatrices.png?raw=true" alt="confusion matrices" align="middle">
 
 To look at individual features, I pulled the feature coefficients for the logistic regression model, and calculated permutation importances for the random forest model.  The both show that most features have low importance values, though for what it's worth the baron_delta feature was my strongest predictor.
-![coefficient and importances graphic](https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/FeatureImportanceGraph.png?raw=true){: .center-block :}
+
+<img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/FeatureImportanceGraph.png?raw=true" alt="coefficient and importances graphic" align="middle">
 
 ## Conclusions
 As you can see, even with all the extra statistical analysis I threw in I still could not confidently predict the outcome.  No matter which champions each team picked, they still had even odds of winning.
@@ -111,4 +121,4 @@ In a way, this is a testament to how well-designed this game is.  Balancing uniq
 In the end, it is the skill and teamwork of the players themselves that decide a match.  And maybe a bit of luck.
 
 ---
-You can view the entire notebook where I ran these models here: [https://github.com/jonDuke/DS-Unit-2-Build-Week/blob/master/Unit_2_LoL_Project.ipynb](https://github.com/jonDuke/DS-Unit-2-Build-Week/blob/master/Unit_2_LoL_Project.ipynb)
+You can view the source notebook where I ran these models here: [https://github.com/jonDuke/DS-Unit-2-Build-Week/blob/master/Unit_2_LoL_Project.ipynb](https://github.com/jonDuke/DS-Unit-2-Build-Week/blob/master/Unit_2_LoL_Project.ipynb)
