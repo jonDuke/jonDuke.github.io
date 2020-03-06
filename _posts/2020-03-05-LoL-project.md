@@ -50,7 +50,7 @@ And of course who doesn't love some top 10 lists.  Here's the top champions for 
 
 <img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/Top10sGraph.png?raw=true" alt="pick, ban, win rate graph" class="center-block">
 
-Interestingly, those rates aren't strongly correlated with each other.  By graphing them this way, we can see that the pick and ban rates are only loosely related and have a lot of variance, while win rates are fairly consistent across the whole roster.  It was also interesting to find the outlier that the least picked champion also had the highest win rate (in these matches, at least).
+Interestingly, those rates aren't strongly correlated with each other.  By graphing them as seen below, we can see that the pick and ban rates are only loosely related and have a lot of variance, while win rates are fairly consistent across the whole roster.  It was also interesting to find the outlier that the least picked champion also had the highest win rate (in these matches, at least).
 
 <img src="https://github.com/jonDuke/jonDuke.github.io/blob/master/img/LoLProject/RateComparisonGraph.png?raw=true" alt="rate comparison graph" class="center-block">
 
