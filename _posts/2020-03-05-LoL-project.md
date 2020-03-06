@@ -95,9 +95,11 @@ I followed this up by selecting a few of the top models and used sklearn's GridS
 1. Logistic Regression with the LeaveOneOutEncoder
 	- This was my best result using default hyperparameters, and still my best after optimization.
 	- Cross-validation accuracy: 53.70%
+	- Final test accuracy: 53.53%
 2. Gaussian Naive-Bayes with the MEstimateEncoder
 	- This one was my second strongest model both in the default search and after optimization.
 	- Cross-validation accuracy: 53.43%
+	- Final test accuracy: 53.94%
 3. Random Forest with the JamesSteinEncoder
 	- While it wasn't the strongest in my default search, I wanted to see how it performed after optimization.  It improved, but is still behind the other models.
 	- Cross-validation accuracy: 53.22%
