@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Group Project\: Where in Reddit?
+title: Group Project- Where in Reddit?
 tags: [Document Similarity, Cross-functional]
 comments: true
 ---
