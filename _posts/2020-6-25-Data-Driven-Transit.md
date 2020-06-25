@@ -76,9 +76,7 @@ As you can see, we were able to create a dashboard that displays the five statis
 
 The image above is a screenshot of how the site looked when my team finished our work.  The live site is available at [https://www.datadriventransit.org/](https://www.datadriventransit.org/), I cannot say when the next team will start making their changes.  I myself am interested to see where this project goes in the future.
 
-I also have a version of the report generation code available to view on Google Colab here, so you can see how we calculated things before future teams do their work: https://colab.research.google.com/drive/1ikldRpw4Zcay83VliECBurf6if4YFJfQ?usp=sharing
-
-The code did get a couple minor optimizations and tweaks after we moved it from Colab to plain .py files, but it is functionally the same.
+I also have a version of the report generation code available to view [here on Google Colab](https://colab.research.google.com/drive/1ikldRpw4Zcay83VliECBurf6if4YFJfQ?usp=sharing), so you can see how we calculated things before future teams do their work.  The code did get a couple minor optimizations and tweaks after we moved it from Colab to plain .py files, but it is functionally the same.
 
 ## What's next
 
