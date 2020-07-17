@@ -3,10 +3,10 @@ layout: page
 title: About me
 ---
 
-My name is Jonathan Duke.  I'm currently studying data science full time, and this site will be a portfolio of my projects as I learn.
+My name is Jonathan Duke.  I'm an upcoming data scientist, and I use this site to post about the various projects I've done.
 
-As you may notice, there's not a lot here yet.  I'm just starting, so I haven't had a chance to make many posts yet, but feel free to read what's here now and keep coming back if you want to see more in the future.
+I studied data science at [Lambda School](https://lambdaschool.com/), an online school that offers several tech focused courses.  Most of the projects on this site so far were done during that course, but my personal projects will be showing up more and more now that I'm wrapping that up.
 
-As for me, I grew up in Denver but now live in the Seattle area.  I have since fallen in love with the nature here and I'm happy to make this city my home.
+I chose data science mainly because of a fascination with AI.  I believe AI and automation will be what brings our society to the next age, and wanted to be a part of it.  Plus it's just really cool.  I love being able to point at something and say "I made that", but now I can point at something and say "I made the thing that made that".
 
-When I'm not studying, my main hobbies right now are video games, hiking, and exploring music.
+As for me personally, I grew up in Denver but now live in the Seattle area.  I have since fallen in love with the nature here and I'm happy to make this city my home.  When I'm not working, my main hobbies right now are video games, hiking, and exploring music.  I always enjoy trying new things, so who knows what I'll add to that list.
