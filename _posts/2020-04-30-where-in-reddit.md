@@ -11,7 +11,7 @@ It's been a while since I could add anything here, classes got busy.  But we jus
 
 In this project, I helped build a web app that could help suggest where to put a text post on Reddit.  In case you aren't familiar with Reddit, it is a social site that consists of thousands of specialized message boards called "subreddits".  Since there are so many out there, it can be difficult sometimes to decide which subreddit to post in.
 
-This was a cross-functional group project, we had 3 data scientists (including myself), and 4 web developers.  Additionally, this was only a one-week project so there are many places we could improve it given more time.  The experience communicating and working with people from other specialties is likely the most valuable thing I got here, but I will be focusing on the data science portion in this article.  To learn more about the rest of it, you can visit the site itself.
+This was a cross-functional group project, we had 3 data scientists (including myself), and 4 web developers.  Additionally, this was only a one-week project so there are many places we could improve it given more time.  The experience communicating and working with people from other specialties is likely the most valuable thing I got here, but I will be focusing on the data science portion in this article.  To learn more about the rest of it, you can visit the site itself.  (It's very unpolished, one week was not enough for the web team to finish everything they wanted to.  But the post predictions do work.)
 
 [https://whereinreddit.netlify.app/](https://whereinreddit.netlify.app/)
 
