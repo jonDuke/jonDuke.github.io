@@ -12,7 +12,7 @@ Time for a personal project!  This had nothing to do with classes, I just wanted
 
 In this project, I set up a simple Unity video game scene where an AI controlled penguin catches fish and brings them back to its baby on the shore.
 
-The whole thing follows a tutorial that can be found here: https://www.immersivelimit.com/tutorials/reinforcement-learning-penguins-part-1-unity-ml-agents Thanks a lot to Adam Kelly for posting it!
+The whole thing follows a tutorial that can be found here: [https://www.immersivelimit.com/tutorials/reinforcement-learning-penguins-part-1-unity-ml-agents](https://www.immersivelimit.com/tutorials/reinforcement-learning-penguins-part-1-unity-ml-agents) Thanks a lot to Adam Kelly for posting it!
 
 It uses a Unity plugin called [ML-Agents](https://github.com/Unity-Technologies/ml-agents), which saw its official 1.0 release just a few months ago.  The tutorial is even earlier, and comes from version 0.14, so there are a couple minor differences in my code where I migrated to the newest version (release 5, version 1.2).  Even as I'm writing this, 1.3 was released today.  It's a fast-growing product!
 
@@ -74,5 +74,5 @@ Reinforcement learning like this can create AI programs for a multitude of tasks
 
 And this example is very basic, there are more techniques you can apply to the training process and the model itself.  [You can have competing AI agents work against each other](https://www.youtube.com/watch?v=kopoLzvh5jY) to try and get a higher score, or you could [teach a robot learn to walk just by how it controls its legs](https://www.youtube.com/watch?v=n2gE7n11h1Y).  The possibilities are endless, and sometimes quite entertaining.
 
-The Unity project and all code in it are available on my github here: https://github.com/jonDuke/Unity-ML-Penguins
+The Unity project and all code in it are available on my github here: [https://github.com/jonDuke/Unity-ML-Penguins](https://github.com/jonDuke/Unity-ML-Penguins)
 
