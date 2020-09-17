@@ -72,7 +72,7 @@ The training session hit it's goal only a few minutes after that last gif.  In t
 
 Reinforcement learning like this can create AI programs for a multitude of tasks.  It's easy to see how you could teach a video game AI this way, but it's also applicable in other ways such as self-driving cars.
 
-And this example is very basic, there are more techniques you can apply to the training process and the model itself.  [You can have competing AI agents work against each other](https://www.youtube.com/watch?v=kopoLzvh5jY) to try and get a higher score, or you could [teach a robot learn to walk just by how it controls its legs](https://www.youtube.com/watch?v=n2gE7n11h1Y).  The possibilities are endless, and sometimes quite entertaining.
+And this example only scratches the surface of what's possible, there are more techniques you can apply to the training process and the model itself.  [You can have competing AI agents work against each other](https://www.youtube.com/watch?v=kopoLzvh5jY) to try and get a higher score, or you could [teach a robot learn to walk just by how it controls its legs](https://www.youtube.com/watch?v=n2gE7n11h1Y).  The possibilities are endless, and sometimes quite entertaining.
 
 The Unity project and all code in it are available on my github here: [https://github.com/jonDuke/Unity-ML-Penguins](https://github.com/jonDuke/Unity-ML-Penguins)
 
